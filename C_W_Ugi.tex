@@ -1,0 +1,382 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry} 
+\date{}
+\author{}
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+    
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=80mm]{a.jpg}
+        \end{figure}
+          \vspace{5mm}
+        \textsc{\large\textbf{UNITED INSTITUTE OF TECHNOLOGY PRAYAGRAJ}\\
+        Uttar Pradesh 211003, INDIA.\\
+        2022-2023}\\
+        \vspace{5mm}
+        \textsc{\large\textbf{Department of Computer Science & Engineering}}\\
+        
+        \vspace{10mm}
+        \LARGE A \\[0.5cm] Project Synopsis\\[0.5cm] on\\[0.5cm]
+        {\LARGE  \bfseries Brain Tumor Detection Using Deep Learning }\\[0.5cm]
+        
+         {\large
+        Under The Guidance Of\\[0.2cm]
+        \textbf{Mr.Praful Pandey } \\[0.2cm]
+        (Assistant Professor)\\[0.5cm]
+        } 
+
+        {\large 
+        Submitted By-\\[0.3cm]
+        \\
+        1. Shubham Maurya (1902840100094)\\
+2. Sudhanshu Maurya (1902840100099) 
+        \\[0.1cm]
+        }
+        \\[0.5]
+        
+
+    \end{center}
+\end{titlepage}
+\maketitle
+\Large
+\tableofcontents
+
+\newpage
+
+
+
+\section{Introduction}
+
+\subsection{Purpose}
+\thispagestyle{empty}
+
+\doublespace
+
+\qquad 
+
+The human body is made up of many organs and brain is the most critical and vital organ of them all.
+One of the common reasons for dysfunction of brain is brain tumor. A tumor is nothing but excess cells
+growing in an uncontrolled manner. Brain tumor cells grow in a way that they eventually take up all the
+nutrients meant for the healthy cells and tissues, which results in brain failure. Currently, doctors locate
+the position and the area of brain tumor by looking at the MR Images of the brain of the patient manually.
+This results in inaccurate detection of the tumor and is considered very time consuming. A Brain Cancer
+is very critical disease which causes deaths of many individuals. The brain tumor detection and
+classification system is available so that it can be diagnosed at early stages. Cancer classification is the
+most challenging tasks in clinical diagnosis. This project deals with such a system, which uses computer,
+based procedures to detect tumor blocks and classify the type of tumor using Convolution Neural Network
+Algorithm for MRI images of different patients. Different types of image processing techniques like
+image segmentation, image enhancement and feature extraction are used for the brain tumor detection in
+the MRI images of the cancer-affected patients. Detecting Brain tumor using Image Processing techniques
+its involves the four stages is Image Pre-Processing, Image segmentation, Feature Extraction, and
+Classification. Image processing and neural network techniques are used for improve the performance of
+detecting and classifying brain tumor in MRI images\\\\\\
+OVERVIEW OF BRAIN AND BRAIN TUMOR\\ Main part in human nervous system is human brain. It
+is located in human head and it is covered by the skull. The function of human brain is to control all the
+parts of human body. It is one kind of organ that allows human to accept and endure all type of
+environmental condition. The human brain enables humans to do the action and share the thoughts and
+feeling. In this section we describe the structure of the brain for understanding the basic things\\\\\\\\The brain tumors are classified into mainly two types: Primary brain tumor (benign tumor) and secondary
+brain tumor (malignant tumor).The benign tumor is one type of cell grows slowly in the brain and type
+of brain tumor is gliomas. It originates from non neuronal brain cells called astrocytes. Basically primary
+tumors are less aggressive but these tumors have much pressure on the brain and because of that, brain
+stops working properly . The secondary tumors are more aggressive and more quick to spread into other
+tissue. Secondary brain tumor originates through other part of the body. These type of tumor have a cancer
+cell in the body that is metastatic which spread into different areas of the body like brain, lungs etc.
+Secondary brain tumor is very malignant. The reason of secondary brain tumor cause is mainly due to 
+}
+\newpage
+\textbf{MAGNETIC RESONANCE IMAGING (MRI)}\\\\\\\\
+
+Raymond v. Damadian invented the first magnetic image in 1969. In 1977 the first MRI image were
+invented for human body and the most perfect technique. Because of MRI we are able to visualize the
+details of internal structure of brain and from that we can observe the different types of tissues of human
+body. MRI images have a better quality as compared to other medical imaging techniques like X-ray and
+computer tomography.[8]. MRI is good technique for knowing the brain tumor in human body. There are
+different images of MRI for mapping tumor induced Change including T1 weighted, T2 weighted and
+FLAIR (Fluid attenuated inversion recovery) weighted shown in figure
+\begin{figure}[h]
+            \centering
+            \includegraphics[width=170mm]{B.png}
+        \end{figure}
+ 
+ The most common MRI sequence is T1 weighted and T2 weighted. In T1 weighted only one tissue type is
+bright FAT and in T2 weighted two tissue types are Bright FAT and Water both. In T1 weighted the
+repetition time (TR) is short in T2 weighted the TE and TR is long. The TE an TR are the pulse sequence
+parameter and stand for repetition time and time to echo and it can be measured in millisecond(ms)[9]. The
+echo time represented time from the centre of the RF pulse to the centre of the echo and TR is the length of
+time between the TE repeating series of pulse and echo is shown in figure 
+\newpage
+\begin{figure}[h]
+            \centering
+            \includegraphics[width=170mm]{c.png}
+        \end{figure}
+        The third commonly used sequence in the FLAIR. The Flair sequence is almost same as T2-weighted
+image. The only difference is TE and TR time are very long. Their approximate TR and TE times are
+shown in table. 
+ \begin{figure}[h]
+            \centering
+            \includegraphics[width=170mm]{d.png}
+        \end{figure}
+\newpage
+\subsubsection{ Design Model}
+\begin{itemize}
+    \item Agile Model
+     \begin{figure}[h]
+            \centering
+            \includegraphics[width=170mm]{e.png}
+        \end{figure}
+\end{itemize}
+\textbf{1. Requirements gathering and analysis}\\
+In this phase, you must define the requirements. You should explain business opportunities and
+plan the time and effort needed to build the project. Based on this information, you can evaluate
+technical and economic feasibility.\\
+\textbf{2. Design the requirements}\\
+When you have identified the project, work with stakeholders to define requirements. You can
+use the user flow diagram or the high-level UML diagram to show the work of new features and
+show how it will apply to your existing system.\\
+\textbf{3. Construction/ Iteration}\\
+When the team defines the requirements, the work begins. The designers and developers start
+working on their project. The aims of designers and developers deploy the working product within the estimated time. The product will go into various stages of improvement, so it includes
+simple, minimal functionality.\\
+\textbf{4.Deployment }\\
+In this phase, the team issues a product for the user's work environment.\\
+\textbf{5. Testing}\\
+In this phase, the Quality Assurance team examine the product's performance and look for the
+bug.\\
+\textbf{6. Feedback}\\
+After releasing of the product, the last step is to feedback it. In this step, the team receives
+feedback about the produOverall Descriptions ct and works through the feedback. \\
+\newpage
+
+
+\susubsection{\textbf{Data Flow Diagram}}
+\begin{figure}[h]
+            \centering
+            \includegraphics[width=170mm]{f.png}
+        \end{figure}
+\subsection{Document Conventions}
+This document was based on the IEEE template for System Requirement Specifications Documentations
+\subsection{Intended audience Suggestions  }
+\item Audience of this SRS are other projects developer, users like student, viewers that will use System.
+This SRS contain detail description about the product, its Functionality, different external interface
+required , System features, Nonfunctional requirements and some additional requirements. 
+
+\subsection{Product scope}
+The main motivation behind Brain tumor detection is to not only detect tumor but it can also classify types
+of tumor. So it can be useful in cases such as we have to sure the tumor is positive or negative, it can detect
+tumor from image and return the result tumor is positive or not. This project deals with such a system,
+which uses computer, based procedures to detect tumor blocks and classify the type of tumor using
+Convolution Neural Network Algorithm for MRI images of different patients. 
+\newpage
+\section{\textbf{Overall Descriptions}}
+
+\subsection{ Product Perspectives}
+The main aim is to design a system is to predict whether the person is suffering from the brain tumour or not In
+this process it collect the various type of images which contain the T1 weight images, T2 weight images and Flair
+images and then pass through the Convolution Neural network (CNN) for the Segmentation and feature extraction
+and Data Augumentation for training the data set. 
+
+\subsection{ Product Functions }
+\item Collect the images from the webscraping, api, images datasets from the Kaggle.
+\item It includes the Data Cleaning and Data preprocessing which include the process of TF dataset(Tensorflow
+dataset pipelining) and the Data Augumentation, Morphological operation, Feature Extraction
+\item we are having dataset previously collected brain MRIs from which we are extracting features. 
+
+\subsection{User Classes and characteristics}
+Identify the various user classes that you anticipate will use this product. User classes may be differentiated
+based on the frequency of use, a subset of product functions used, technical expertise, security or privilege
+levels, educational level, or experience. Describe the pertinent characteristics of each user class. Certain
+requirements may pertain only to certain user classes. Distinguish the most important user classes for this
+product from those who are less important to satisfy.
+\item User: User can capture or upload image and view result.
+\item Admin: These user has an authority to update , delete and train sample image(training dataset).
+\subsection{Operating environment }
+Our Project is based Cloud and user application run on any web browser and plateform. So, we need desktop or
+android smartphone to run an application.
+\item Window 10
+\item Window 11
+\item Linux 
+\subsection{Design and Implementations Constraints}
+This project is developed in Python, it runs on Google collabs and Jupyter Notebook. It is wrapped into separate
+modules where each module and each module are linked with each other, where we create various modules of
+python which include the tensorflow , tf server , and many Model optimization technique.
+\subsection{User Documentations }
+The Software is uploaded on the open-source platform on google Collaboratory
+\subsection{Assumptions and Dependencies}
+Leaf disease detection is developed in Python. Python must be installed on the user System. The Jupyter Notebook
+installed all the machine Learning Libraries and the Deep learning libraries. 
+\section{\textbf{Project Requirements}}
+
+\subsection{User Interface Requiremnets }
+
+
+    \textbf{1.Images collection as Tensorflow TF}\\
+In this process the cateogorical images of the leaf which include the healthy images , T1 weight
+images, T2 images can be inserted from the local memory to the tensorflow modules in the form of
+batches . in this process we use the batch processing technique in which the data is being taken from
+the local memory in the batches. \begin{figure}[h]
+            \centering
+            \includegraphics[width=170mm]{g.png}
+        \end{figure}
+    
+                        \begin{figure}[h]
+            \centering
+            \includegraphics[width=170mm]{h.png}
+        \end{figure}
+        \newpage
+        \textbf{2.Preprocessing}\\
+        Images come in different shapes and sizes. They also come through different sources. For example,
+some images are what we call “natural images”, which means they are taken in color, in the real world.
+For example:
+\item A picture of a flower is a natural image.
+\item An X-ray image is not a natural image.
+Taking all these variations into consideration, we need to perform some pre-processing on any image
+data. RGB is the most popular encoding format, and most “natural images” we encounter are in RGB.
+Also, among the first step of data pre-processing is to make the images of the same size. Let’s move
+on to how we can change the shape and form of images
+\textbf{Morphological Transformations}\\
+The term morphological transformation refers to any modification involving the shape and form of
+the images. These are very often used in image analysis tasks. Although they are used with all types
+of images, they are especially powerful for images that are not natural (come from a source other than
+a picture of the real world).\\\\
+1.Thresholding\\
+one of the simpler operations where we take all the pixels whose intensities are above a certain
+threshold and convert them to ones; the pixels having value less than the threshold are converted to
+zero. This results in a binary image.\\\\
+2.Erosion, Dilation, Opening & Closing\\
+Erosion shrinks bright regions and enlarges dark regions. Dilation on the other hand is exact opposite
+side — it shrinks dark regions and enlarges the bright regions.\\\\
+Opening is erosion followed by dilation. Opening can remove small bright spots (i.e. “salt”) and
+connect small dark cracks. This tends to “open” up (dark) gaps between (bright) features.\\\\
+Closing is dilation followed by erosion. Closing can remove small dark spots (i.e. “pepper”) and
+connect small bright cracks. This tends to “close” up (dark) gaps between (bright) features.\\\\
+All these can be done using the skimage.morphology module. The basic idea is to have a circular disk
+of a certain size (3 below) move around the image and apply these transformations using it.\\\\
+\newpage
+\textbf{3.Segmentation}\\\\
+Segmentation: Region growing is the simple region-based image segmentation technique. It is also
+classified as a pixel based image segmentation technique since it is involve the selection of initial
+seed points.
+\begin{figure}[h]
+            \centering
+            \includegraphics[width=170mm]{i.png}
+        \end{figure}\\\\
+        \textbf{4.Feature Extraction}\\\\We apply machine learning to analyze a growing volume of data, which is becoming
+increasingly complicated. The emergence of deep learning during the past decade has undoubtedly
+helped generate learning paradigms that are becoming more effective. Numerous machine-learning
+jobs seek to categorize difficulties. Since features are extracted from the input data, it can be
+considered as a novel representation of the data, particularly for this task. Subsequently, in addition
+to these features, which complete the job, a categorization method is learned. This method should be
+applied to unobserved data in the training stage period upon completion of the training. It ought to
+give a precise forecast of its response precisely and in this situation the class label. Frequently, and
+particularly until recent times, the features extracted from the input were handcrafted, implying that
+they are specially designed for the input data and the present task. It is standard practice for these not
+to be exclusively tied to the data type; for instance, handwritten images of words' pictures, but rather
+to a specific subset, such as English words handwritten in ink on parchment. Usually, most such
+features cannot manage change well; nevertheless, machine learning is a different method of
+extracting features from the data to learn a feature extractor.\\\\\ 
+\textbf{Convolutional Neural Network (CNN)}\\
+convolutional layers store the output of the kernels from the previous layer which consists of
+weights and biases to be learned. The generated kernels that represent the data without an error is
+the point of the optimization function. In this layer, a sequence of mathematical processes is done
+to extract the feature map of the input image .exhibits the operation of the convolution layer for a
+5x5 image input and aresult is a 3x3 filter that reduced to a smaller size . Also, the figure shows
+the shifting of filter starting from the upper left corner of the input image. The valuesfor each step
+are thenmultiplied by the values of the filter and the added values are the result. A new matrix
+with the reduced size is formed from the input image.\\
+\textbf{5. Dimension Reduction}\\
+ The availability of high-dimensional medical image data during the identification procedure can place
+a heavy computational burden and require a suitable preprocessing step for lower-dimensional
+representation. At the same time, to reduce the storage requirement and complexity of the image data
+Random Projection Technique (RPT) is widely accepted as the multivariate approach for data
+reduction. Aims This paper mainly focuses on T1-weighted MRI images clustering for brain tumor
+segmentation with dimension reduction by using a conventional Principle Component Analysis (PCA)
+and RPT. Methods Two clustering algorithms, K-Means and Fuzzy C-Means, are used to detect the
+brain tumor. The primary objective is to present a comparison of two cluster methods between the
+PCA algorithm and RPT on MRIs. Apart from the original dimension of 512×512, the analysis used
+three other sizes, 256×256, 128×128, and 64×64, to study the effect of methods.\\\\
+\textbf{6. Classification}\\
+Classification is the final step of the image analysis method that involves sorting feature data in an
+image into separate classes. After segmenting a suspicious region, feature extraction and selection
+scheme are performed to extract the relevant information from the region; and a classification
+technique is used so that the best results are achieved, based on the available features and the Tumor
+classes.\\\\ \begin{figure}[h]
+            \centering
+            \includegraphics[width=170mm]{j.png}
+        \end{figure}\\\\
+       \textbf{ 7. Performance Analysis}\\
+It needed to look into the most recent cutting-edge studies on brain tumor identification and tracking.
+This study evaluated recent papers published in the last decade or so that focused on the identification
+and categorization/classification of brain tumors employing CNN.\\\
+Current framework systems follow multiple pre-defined procedures to identify brain MRI images The
+effective mechanisms involved in recognizing and classifying tumor and non-tumor units in MRI
+brain imaging is covered in . The following is a brief overview of prospective approaches and
+strategies. Most images to be entered as input are MRI brain scans . Depending on the architecture
+and memory limitations, the input might be 2D or 3D. Due to its efficiency in significantly enhancing
+image data the input regarding images to be entered has proved to be as crucial as any other stage .
+Segmentation primarily divides the input image into identical sections depending upon specified
+criteria, allowing only essential data to be extracted and the remainder to be discarded . There are
+numerous approaches. Some studies segment the actual tumor [48], whereas others segment the image
+region including the tumor . The goal of the classification stage is to divide the input data into various
+categories based on comparable behavior patterns inside the group. The third process described in the
+literature involves directly feeding brain MRI images to a Deep Learning program for categorization
+with no pre-processing. Statistical techniques or machine learning techniques are used to identify
+features. The Deep Learning algorithm is then trained using these extracted features. While deep
+learning methods do Appl. Sci. 2022, 12, 7282 8 of 20 not necessitate extraction of features, the study
+has shown that extracted features using machine learning, or meta-heuristic optimization methods, are
+still used in different models with reinforcement learning to include efficient and resilient features .
+Each plan’s principal purpose is to change the levels of Supervised Learning based on the
+experimental criteria and then choose the model with the best performance. Using machine and Deep
+Learning approaches, researchers employed models to build efficient systems. The dataset is divided
+into learning, testing, and verification sets before beginning any of the approaches above.
+Convolutional Neural Network (CNN) has received substantial appreciation and recognition in Deep
+Learning for its ability to automatically extract and detect deep features by responding to tiny changes
+in images. 
+
+\subsection{Hardware Interface }
+The minimum hardware requirement of the Application is a 500 Megahertz CPU and 500 megabytes of RAM.
+Also, because it uses the Deep Learning Concept where we use the computational power so we need a Compatible
+graphic card at least NVIDIA 1650. for the bigger Networks, additional memory is required
+\subsection{Software Interface}
+The application required python and Scikit-learn modules to be installed on the System, more specifically Python
+3.6 version.\\\\
+The project can be connected with the Deep Learning APIs and the API for fetching the real time Photo. 
+\subsection{Communication Interface}
+The project requires an internet connection to install new plugins, update already installed ones, and update some
+of its Components(APIs, modules, etc). 
+\section{\textbf{System Features}}
+This section demonstrates the most prominent part of this Software where it tells us about the accuracy of the
+model that how much accuracy it performs for the training model and the testing model.\\
+\subsection{\textbf{System feature}}\\\\
+\large
+4.1.1.Description and priority\\
+ Detect The MRI whether the person has Tumor or Not.\\\\
+4.1.2.Stimulus/Response Sequences
+\item Give quick response when leaf capture.
+\item  Run system in using previously fetched dataset when not connected to cloud (Internet). \\
+
+
+
+
+\newpage
+
+\section{References}
+\item 1.L.Guo,L.Zhao,Y.Wu,Y.Li,G.Xu,andQ.Yan,“Tumordetection in MR images using oneclass immune feature weighted
+SVMs,” IEEE Transactions on Magnetics, vol. 47, no. 10, pp. 3849–3852,2011.\\
+\item 2.R.Kumari,“SVMclassificationanapproachondetectingabnormalityinbrainMRIimages,”Inter
+nationalJournalofEngineeringResearchandApplications,vol.3,pp.1686–1690,2013.\\
+\item 3.DICOM Samples Image Sets, http://www.osirix-viewer.com/.\\
+\item 4.“Brainweb:SimulatedBrainDatabase” http://brainweb.bic.mni.mcgill.ca/cgi/brainweb1.\\
+\item 5.Obtainable Online: www.cancer.ca/~/media/CCE 10/08/2015.\\
+\item 6. J. C. Buckner, P. D. Brown, B. P. O’Neill, F. B. Meyer , C. J. Wetmore,J. H Uhm, "Central nervous system tumors." In
+Mayo Clinic Proceedings,Vol. 82, No. 10, pp. 1271- 1286, October 2007.\\
+\item 7.Deepa , Singh Akansha. (2016). - Review of Brain Tumor Detection from tomography. International Conference on
+Computing for Sustainable Global Development (INDIACom) 
+
+\end{document}
+
+
+
