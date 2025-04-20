@@ -1,6 +1,3 @@
-Here's a well-structured and professional-style project description based on your brain tumor detection synopsis, formatted similarly to the earlier E-commerce Dashboard write-up:
-
----
 
 # Brain Tumor Detection Using Deep Learning
 
@@ -50,6 +47,3 @@ To explore the project:
 
 We are deeply grateful to our guide, **Mr. Praful Pandey**, for his expert mentorship and support throughout the project. This work is a testament to the power of AI in transforming healthcare diagnostics.
 
----
-
-Let me know if you'd like help creating a GitHub README, PowerPoint presentation, or a short write-up for LinkedIn from this project!
